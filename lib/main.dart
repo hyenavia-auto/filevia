@@ -15,7 +15,7 @@ class FileToolApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'File Compressor & Converter',
+      title: 'Filevia',
       theme: ThemeData(primarySwatch: Colors.blue),
       home: const FileToolHomePage(),
     );
