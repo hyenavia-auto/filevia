@@ -23,12 +23,15 @@ jobs:
       - name: Set up Flutter
         uses: subosito/flutter-action@v2
         with:
-          flutter-version: ''
-          channel: 'master'
+          flutter-version: '3.29.0'
+          channel: 'stable'
           cache: true
 
       - name: Install Dependencies
         run: flutter pub get
+
+      - name: Flutter Clean
+        run: flutter clean
 
       - name: Build Android APK
         run: flutter build apk --release
